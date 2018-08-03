@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <title>Dice Roller</title>
+  </head>
+  <body>
+    <h1>Dice Roller</h1>
+
+    <!-- JavaScript -->
+
+    <script>
+      function roll(sides) {
+        var dice = document.querySelector('#diceCount')
+        for (var i = this.dice.length - 1; i >= 0; i--) {
+          return (Math.floor(Math.random() * sides + 1)
+        }
+      }
+
+      function rollResults(mod, rolls) {
+        var modifier = document.querySelector('#mod')
+        var rolls = document.querySelector('#run')
+        console.log(this.modifier + this.rolls)
+      }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Dice Roller Layout -->
+
+    <div class='container'>
+     <div class='row'>
+      <p>QTY</p><br>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(4)' id='run'>d4</button></div>
+      <p>Modifier</p>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <p>Roll Results</p>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d4_result">
+        <script> rollResults() </script>
+      </div>
+    
+
+    <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(6)' id='run'>d6</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d6_result">
+        <script> rollResults() </script>
+      </div>
+   
+
+    <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(8)' id='run'>d8</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d8_result">
+        <script> rollResults() </script>
+      </div>
+   
+
+     <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(10)' id='run'>d10</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d10_result">
+        <script> rollResults() </script>
+      </div>
+  
+
+    <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(12)' id='run'>d12</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d12_result">
+        <script> rollResults() </script>
+      </div>
+   
+
+    <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(20)' id='run'>d20</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d20_result">
+        <script> rollResults() </script>
+      </div>
+  
+
+    <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+      <div class='col-md-2'><button onclick='roll(100)' id='run'>d100</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="d100_result">
+        <script> rollResults() </script>
+      </div>
+  
+
+    <div class='container'>
+     <div class='row'>
+      <div class='col-md-2'><input type='number' placeholder='Total Die' id='diceCount' /></div>
+       <div class='col-md-2'><input type='number' id='userNumber' /></div>
+      <div class='col-md-2'><button onclick='roll()' id='run'>roll</button></div>
+      <div class='col-md-2'><input type='text' placeholder='Mod' id='mod' /></div>
+      <div class='col-md-2'>=</div>
+      <div class='col-md-2'><input type='JavaScript' readonly id="userNumber_result">
+        <script> rollResults() </script>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
